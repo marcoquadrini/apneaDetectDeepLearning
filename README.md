@@ -22,9 +22,9 @@ The VGG19 base model is used to extract relevant features from the spectrograms,
 ## Model Training
 The model is trained using the following configurations:
 
-1)Loss function: Sparse Categorical Crossentropy
-2)Optimizer: Adam with a learning rate of 1e-4
-3)Metrics: Accuracy
+1) Loss function: Sparse Categorical Crossentropy
+2) Optimizer: Adam with a learning rate of 1e-4
+3) Metrics: Accuracy
 The training process includes early stopping, which monitors the validation accuracy and stops training if there is no improvement for a specified number of epochs.
 
 ## Evaluation
