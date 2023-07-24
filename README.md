@@ -1,6 +1,6 @@
 # Detection of sleep apnea (Unicam Project)
 
-##Overview
+#Overview
 This repository contains the code and data for a deep learning project focused on apnea detection from audio spectrograms. The goal of this project is to train a deep learning model capable of classifying whether a given spectrogram represents an apnea or not.
 
 ##Dataset
