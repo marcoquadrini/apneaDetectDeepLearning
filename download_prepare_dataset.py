@@ -168,8 +168,7 @@ def searchEdfFromRml(fileRml):
     list_edf = []
     print("file Rml = "+fileRml)
     with open(fileUrl, 'r', encoding='UTF-8') as file:
-        line = file.readline()
-        while line:
+        while line := file.readline():
             url = line.rstrip()
             if url.find(fileRml) != -1 and url.find(".rml") == -1:
                 fileName = extract_file_name(url)
@@ -178,8 +177,7 @@ def searchEdfFromRml(fileRml):
 
 def getUrl(fileToFind):
      with open(fileUrl, 'r', encoding='UTF-8') as file:
-        line = file.readline()
-        while line:
+        while line := file.readline():
             url= line.rstrip() 
             fileName = extract_file_name(url)
             if fileName == fileToFind:
@@ -197,8 +195,7 @@ fileUrl = "url_list.txt"
 folder_path = 'edf'
 
 with open(fileUrl, 'r', encoding='UTF-8') as file:
-    line = file.readline()
-    while line:
+    while line := file.readline():
         url= line.rstrip() 
         fileName = extract_file_name(url)
         if '.rml' in fileName:
